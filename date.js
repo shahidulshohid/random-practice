@@ -20,5 +20,16 @@
 // const timeElapsed = endTime - startTime;
 // console.log(timeElapsed)
 //================================
-const hours = new Date().getHours() 
-console.log(hours)
+// const hours = new Date().getHours() 
+// console.log(hours)
+//===================================
+// const minutes = new Date().getMinutes()
+// console.log(minutes)
+//=========================
+
+let today = new Date()
+let dd = String(today.getDate()).padStart(2, '0')
+let mm = String(today.getMonth() + 1).padStart(2, '0')
+let yyy = today.getFullYear()
+today = dd + '/' + mm + '/' + yyy
+console.log(today)
